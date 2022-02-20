@@ -1,15 +1,7 @@
 <div class="container">
     <h2 class="games_title">Games</h2>
-    
-    <!-- <app-game-search></app-game-search> -->
-    <div class="search">
-        <p>Search games</p>
-        <div class="search_field">
-            
-            <input #searchBox id="search-box" class="search_input" placeholder="Search games" [(ngModel)]="searchStr">
-            <!-- <button class="search_btn" (click)="search(searchBox.value)" >Search</button> -->
-        </div>
-    </div>
+
+    <app-game-search></app-game-search>
     <h2 class="title__featured_games">Featured games</h2>
     <div class="content">
         <!-- <div class="games_cards">
@@ -22,22 +14,25 @@
         </div> -->
         <app-all-games></app-all-games>
         <aside class="filters">
-            
+
             <div class="filters__price">
                 <p>Filter by price</p>
                 <input type="range" name="" id="">
             </div>
             <div class="filters__tags">
 
-                <div *ngFor="let filterItem of filterItems; let i = index;" class="form-check" style="padding-right:20px;">
+                <div *ngFor="let filterItem of filterItems; let i = index;" class="form-check"
+                    style="padding-right:20px;">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" [(ngModel)]="filterItem.checked" [value]="filterItem.value"> filterItems[i].value
+                        <input type="checkbox" class="form-check-input" [(ngModel)]="filterItem.checked"
+                            [value]="filterItem.value"> filterItems[i].value
                     </label>
-                  </div>
+                </div>
 
                 <p>Filter by tag</p>
                 <div class="filters__tags_value">
-                    <input type="checkbox" name="indie" id="indie" [(ngModel)]="searchType"><label for="indie">Indie</label>
+                    <input type="checkbox" name="indie" id="indie" [(ngModel)]="searchType"><label
+                        for="indie">Indie</label>
                 </div>
                 <div class="filters__tags_value">
                     <input type="checkbox" name="action" id="action"><label for="action">Action</label>

@@ -1,9 +1,7 @@
 <div class="search">
     <p>Search games</p>
     <div class="search_field">
-        
-       <!--  <input #searchBox id="search-box" class="search_input" placeholder="Search games" [(ngModel)]="searchStr"> -->
-        <!-- <button class="search_btn" (click)="search(searchBox.value)" >Search</button> -->
-        <input #searchBox id="search-box" class="search_input" placeholder="Search games" ng-model="searchStr">
+        <input #searchBox id="search-box" class="search_input" placeholder="Search games" [(ngModel)]="searchStr">
+        <button class="search_btn" (click)="search(searchStr)">Search</button>
     </div>
 </div>

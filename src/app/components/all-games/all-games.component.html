@@ -1,11 +1,12 @@
-<!-- <div class="search">
+<div class="search">
     <p>Search games</p>
     <div class="search_field">
-        
+
         <input #searchBox id="search-box" class="search_input" placeholder="Search games" [(ngModel)]="searchStr">
-        
+
     </div>
-</div> -->
+</div>
+
 <div class="games_cards" ng-controller="gamesCtrl">
     <div class="game_card" *ngFor="let game of games | search:searchStr">
         <div class="game_card_top">
