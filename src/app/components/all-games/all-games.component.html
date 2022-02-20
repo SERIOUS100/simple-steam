@@ -1,0 +1,20 @@
+<!-- <div class="search">
+    <p>Search games</p>
+    <div class="search_field">
+        
+        <input #searchBox id="search-box" class="search_input" placeholder="Search games" [(ngModel)]="searchStr">
+        
+    </div>
+</div> -->
+<div class="games_cards" ng-controller="gamesCtrl">
+    <div class="game_card" *ngFor="let game of games | search:searchStr">
+        <div class="game_card_top">
+            <h2 class="game_title">{{game.name}}</h2>
+            <p class="game_price">{{game.price}}</p>
+        </div>
+        <div class="game_card_bottom">
+            <p class="game_description">{{game.description}}</p>
+            <button class="add_to_library_btn">Add to library</button>
+        </div>
+    </div>
+</div>

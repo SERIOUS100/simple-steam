@@ -1,0 +1,43 @@
+.game_card{
+    width: 272px;
+    height: 312px;
+    box-shadow: 0px 8px 16px rgba(34, 56, 73, 0.4);
+    margin-bottom: 15px;
+    .game_card_top, .game_card_bottom{
+        height: 50%;
+    }
+    .game_card_top{
+        padding: 10px;
+        box-sizing: border-box;
+        background: #BDBCFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        .game_title{
+            align-self: flex-start;
+            margin: 0;
+        }
+        .game_price{
+            align-self: flex-end;
+            margin: 0;
+            font-size: 24px;
+        }
+    }
+    .game_card_bottom{
+        padding: 15px;
+        .game_description{
+            margin: 0 0 10px;
+            font-size: 12px;
+        }
+        .add_to_library_btn{
+            width: 100%;
+            height: 35px;
+            background: #6C69FF;
+            color: white;
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+        }
+    }
+}
